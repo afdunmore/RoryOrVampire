@@ -11,18 +11,13 @@ class main{
         this.tempNumber = 0;
         this.lastScore = 0;
         
-        let jsonData;
-
         fetch("leaderboard.json")
           .then(response => response.json())
           .then(json => {
-            jsonData = json;
+            this.leaderboard = json;
+            console.log(this.leaderboard);
           });
 
-        
-        this.leaderboard = jsonData;
-        console.log(this.leaderboard);
-        
         
 
         //Getting Elements
