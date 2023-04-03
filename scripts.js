@@ -16,32 +16,36 @@ class main{
           .then(json => {
             this.leaderboard = json;
             console.log(this.leaderboard);
+            console.log(this.leaderboard["Adam"]);
+            
+            //Getting Elements
+            this.imageEle = document.getElementById("imageID");
+            this.RoryEle = document.getElementById("Rory");
+            this.VampireEle = document.getElementById("Vampire");
+            this.scoreEle = document.getElementById("score");
+            this.leaderboardScreen = document.getElementById("leaderboard")
+            this.leaderboardButton = document.getElementById("leaderboardButton")
+            this.leaderboardSubmitButton = document.getElementById("submitName")
+
+            //Set image
+            this.Update();
+
+            //Button event listeners
+            this.RoryEle.addEventListener("click", this.RoryUpdate.bind(this));
+            this.VampireEle.addEventListener("click", this.VampireUpdate.bind(this));  
+            this.leaderboardButton.addEventListener("click", this.ShowLeaderboard.bind(this));
+            this.leaderboardSubmitButton.addEventListener("click", this.UpdateLeaderboard.bind(this));
+
+            //Hide leaderboard
+            this.leaderboardScreen.style.display = "none";
+
+            this.Preload();
+            
           });
 
         
 
-        //Getting Elements
-        this.imageEle = document.getElementById("imageID");
-        this.RoryEle = document.getElementById("Rory");
-        this.VampireEle = document.getElementById("Vampire");
-        this.scoreEle = document.getElementById("score");
-        this.leaderboardScreen = document.getElementById("leaderboard")
-        this.leaderboardButton = document.getElementById("leaderboardButton")
-        this.leaderboardSubmitButton = document.getElementById("submitName")
-
-        //Set image
-        this.Update();
-
-        //Button event listeners
-        this.RoryEle.addEventListener("click", this.RoryUpdate.bind(this));
-        this.VampireEle.addEventListener("click", this.VampireUpdate.bind(this));  
-        this.leaderboardButton.addEventListener("click", this.ShowLeaderboard.bind(this));
-        this.leaderboardSubmitButton.addEventListener("click", this.UpdateLeaderboard.bind(this));
-
-        //Hide leaderboard
-        this.leaderboardScreen.style.display = "none";
-
-        this.Preload();
+        
     }
 
     ShowLeaderboard(){
