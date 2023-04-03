@@ -13,7 +13,7 @@ class main{
         
         let jsonData;
 
-        fetch("test.json")
+        fetch("leaderboard.json")
           .then(response => response.json())
           .then(json => {
             jsonData = json;
