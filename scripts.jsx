@@ -13,13 +13,16 @@ class main{
         
         let jsonData;
 
-        fetch("leaderboard.json")
+        fetch("test.json")
           .then(response => response.json())
           .then(json => {
             jsonData = json;
+            useData();
           });
 
-        console.log(jsonData);
+        function useData() {
+          this.leaderboard = jsonData;
+        }
         
 
         //Getting Elements
