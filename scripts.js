@@ -14,6 +14,9 @@ class main{
         fetch("leaderboard.json")
           .then(response => response.json())
           .then(json => {
+            
+            this.leaderboard = json;
+            
             //Getting Elements
             this.imageEle = document.getElementById("imageID");
             this.RoryEle = document.getElementById("Rory");
