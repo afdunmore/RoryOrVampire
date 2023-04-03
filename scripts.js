@@ -16,6 +16,7 @@ class main{
             .then(response => response.json())
             .then(json => this.leaderboard = json);
         
+        console.log(this.leaderboard);
         
 
         //Getting Elements
