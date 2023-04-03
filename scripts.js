@@ -13,7 +13,8 @@ class main{
         
         //Get leaderboard
         fetch("leaderboard.json")
-            .then(response => response.json());
+            .then(response => response.json())
+            .then(json => console.log(json));
         
         this.leaderboard = json;
 
