@@ -122,6 +122,7 @@ class main{
         
         else{
             this.leaderboard[username] = this.score;
+            console.log(this.leaderboard);
         }
     }
 }
