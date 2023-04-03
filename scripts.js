@@ -10,6 +10,12 @@ class main{
         this.score = 0;
         this.tempNumber = 0;
         this.lastScore = 0;
+        
+        //Get leaderboard
+        fetch("leaderboard.json")
+            .then(response => response.json());
+        
+        this.leaderboard = json;
 
         //Getting Elements
         this.imageEle = document.getElementById("imageID");
