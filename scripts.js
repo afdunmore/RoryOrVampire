@@ -20,9 +20,9 @@ class main{
             useData();
           });
 
-        function useData() {
-          this.leaderboard = jsonData;
-        }
+        
+        this.leaderboard = jsonData;
+        
         
 
         //Getting Elements
