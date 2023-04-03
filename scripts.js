@@ -11,14 +11,14 @@ class main{
         this.tempNumber = 0;
         this.lastScore = 0;
         
-        this.leaderboard = {""}; 
+        let tempLeaderboard; 
         
         //Get leaderboard
         fetch("leaderboard.json")
             .then(response => response.json())
-            .then(json => this.leaderboard = json);
+            .then(json => tempLeaderboard = json);
         
-        console.log(this.leaderboard);
+        console.log(tempLeaderboard);
         
 
         //Getting Elements
