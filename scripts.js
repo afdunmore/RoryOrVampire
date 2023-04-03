@@ -14,9 +14,9 @@ class main{
         //Get leaderboard
         fetch("leaderboard.json")
             .then(response => response.json())
-            .then(json => console.log(json));
+            .then(json => this.leaderboard = json);
         
-        this.leaderboard = json;
+        
 
         //Getting Elements
         this.imageEle = document.getElementById("imageID");
