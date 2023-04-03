@@ -17,13 +17,9 @@ class main{
           .then(response => response.json())
           .then(json => {
             jsonData = json;
-            useData();
           });
 
-        function useData() {
-          console.log(jsonData);
-            this.leaderboard = jsonData;
-        }
+        console.log(jsonData);
         
 
         //Getting Elements
