@@ -17,11 +17,11 @@ class main{
           .then(response => response.json())
           .then(json => {
             jsonData = json;
-            useData();
           });
 
         
         this.leaderboard = jsonData;
+        console.log(this.leaderboard);
         
         
 
