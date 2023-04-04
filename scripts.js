@@ -2,7 +2,7 @@ class main{
     constructor(){
 
         //Initialise Variables
-        this.ImagePaths = ["./img/MaybeHappyRory.jpg", "./img/RoryEating.jpg", "./img/ShepardRory.jpg", "./img/vampire1.jpg", "./img/vampire2.jpg", "./img/RorysSideEye.jpg", "./img/WhereAmI.jpg"]; //Images must be 640x360
+        this.ImagePaths = ["./img/MaybeHappyRory.jpg", "./img/RoryEating.jpg", "./img/ShepardRory.jpg", "./img/vampire1.jpg", "./img/vampire2.jpg", "./img/RorysSideEye.jpg", "./img/WhereAmI.jpg", "./img/vampire3.png", "./img/vampire4.png"]; //Images must be 640x360
         //true = Rory / false = Vampire
         this.Answers = [true, true, true, false, false, true, true];
 
