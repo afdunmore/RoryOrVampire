@@ -116,8 +116,12 @@ class main{
 
     UpdateLeaderboard(){
         var username = document.getElementById("nameInput").value;
+        
+        if (username == ""){
+            alert("Username is null")
+        }
 
-        if (username in this.leaderboard){
+        else if (username in this.leaderboard){
             this.DisplayError();
             alert("Username Taken");
             return null;
