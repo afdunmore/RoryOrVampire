@@ -8,12 +8,9 @@ class main{
     constructor(){
 
         //Initialise Variables
-        this.ImagePaths = ["./img/MaybeHappyRory.jpg", "./img/RoryEating.jpg", "./img/ShepardRory.jpg", "./img/vampire1.jpg", "./img/vampire2.jpg", "./img/RorysSideEye.jpg", "./img/WhereAmI.jpg", "./img/vampire3.png", "./img/vampire4.png"]; //Images must be 640x360
+        //Images must be 640x360
         this.vampirePaths = [ "./img/vampire1.jpg", "./img/vampire2.jpg","./img/vampire3.png", "./img/vampire4.png"];
         this.roryPaths = ["./img/MaybeHappyRory.jpg", "./img/RoryEating.jpg", "./img/ShepardRory.jpg","./img/RorysSideEye.jpg", "./img/WhereAmI.jpg"];
-        
-        //true = Rory / false = Vampire
-        this.Answers = [true, true, true, false, false, true, true,false,false];
 
         this.number = 0;
         this.score = 0;
