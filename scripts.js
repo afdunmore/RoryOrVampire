@@ -1,7 +1,7 @@
 //Todos:
 // -Add writing for leaderboard
 
-witch(){
+function witch(){
     var audio = new Audio('feelgood.mp3');
     audio.play();
 }
