@@ -16,6 +16,7 @@ class main{
         this.score = 0;
         this.tempNumber = 0;
         this.lastScore = 0;
+        this.imageType = 0;
         
         fetch("leaderboard.json")
           .then(response => response.json())
@@ -82,11 +83,10 @@ class main{
     }
 
     Update(){
-        var imageType = 0;
         //Random number for type
-        imageType = Math.floor(Math.random() * 2);
+        this.imageType = Math.floor(Math.random() * 2);
         
-        console.log(imageType);
+        console.log(this.imageType);
         
         
         //Random number with validation for image
