@@ -120,15 +120,18 @@ class main{
     }
 
     Preload(){
+        var j = 0;
         var Images = [];
         for (var i = 0; i < this.vampirePaths.length; i++){
             Images[i] = new Image();
             Images[i].src = this.vampirePaths[i];
+            
+            j++;               
         }
         
         for (var i = 0; i < this.roryPaths.length; i++){
-            Images[i] = new Image();
-            Images[i].src = this.roryPaths[i];
+            Images[i + j] = new Image();
+            Images[i + j].src = this.roryPaths[i];
         }
     }
 
