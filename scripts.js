@@ -1,3 +1,9 @@
+//Todos:
+// -Make Answers a random between vampire or rory for scaleability
+// -Add writing for leaderboard
+
+
+
 class main{
     constructor(){
 
