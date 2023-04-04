@@ -103,9 +103,8 @@ class main{
 
     EndGame(){
         if (this.score > 0){
-            this.ShowLeaderboard();
+            //this.ShowLeaderboard();
         }
-        console.log(this.score);
         this.lastScore = this.score;
         this.score = 0;
     }
