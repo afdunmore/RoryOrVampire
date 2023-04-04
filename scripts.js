@@ -82,7 +82,13 @@ class main{
     }
 
     Update(){
-        //Random number with validation
+        //Random number for type
+        imageType = Math.floor(Math.random() * 2);
+        
+        console.log(imageType);
+        
+        
+        //Random number with validation for image
         while (this.tempNumber == this.number){
             this.tempNumber = Math.floor(Math.random() * this.ImagePaths.length);
         }
