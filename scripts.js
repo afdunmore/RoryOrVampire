@@ -66,7 +66,7 @@ class main{
     }
 
     RoryUpdate(){
-        if (this.Answers[this.number] == true){
+        if (this.imageType == 0){
             this.score++;
         }
         else{
@@ -76,7 +76,7 @@ class main{
     }
 
     VampireUpdate(){
-        if (this.Answers[this.number] == false){
+        if (this.imageType == 1){
             this.score++;
         }
         else{
