@@ -35,9 +35,6 @@ class main{
             this.leaderboardButton.addEventListener("click", this.ShowLeaderboard.bind(this));
             this.leaderboardSubmitButton.addEventListener("click", this.UpdateLeaderboard.bind(this));
 
-            //Hide leaderboard
-            this.leaderboardScreen.style.display = "none";
-
             this.Preload();
             
           });
