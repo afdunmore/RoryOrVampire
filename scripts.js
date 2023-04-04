@@ -82,6 +82,7 @@ class main{
     }
 
     Update(){
+        var imageType = 0;
         //Random number for type
         imageType = Math.floor(Math.random() * 2);
         
