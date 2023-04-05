@@ -1,4 +1,3 @@
-<!-- Insert this script at the bottom of the HTML, but before you use any Firebase services -->
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js'
 
 // If you enabled Analytics in your project, add the Firebase SDK for Google Analytics
