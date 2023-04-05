@@ -1,9 +1,6 @@
 //Todos:
 // -Add writing for leaderboard
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-
 function witch(){
     var audio = new Audio('feelgood.mp3');
     audio.play();
