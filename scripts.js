@@ -142,6 +142,7 @@ class main{
         if (this.score > 0){
             //this.ShowLeaderboard();
         }
+        witch();
         this.lastScore = this.score;
         this.score = 0;
     }
